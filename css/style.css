@@ -5,6 +5,7 @@
     --orange: #FF8F00;
     --blue: #051E34;
     --gray: #5B5858;
+    --cyan: #1B72E8;
 }
 
 
@@ -52,6 +53,7 @@ button{
     height: calc(100vh - 80px);
     position: fixed;
     background-color: var(--blue);
+    background-image: url(../img/sidebar-bg.png);
 }
 
 .settings{
@@ -76,7 +78,23 @@ button{
             MAIN SECTION
 */
 
+/* 
+    UPPER SECTION
+*/
 
+.main-section{
+    width: calc(100% - 70px);
+    float: right;
+}
+
+.my-upper-main{
+    background-color: #1B72E8;
+}
+
+.plus{
+    width: 40px;
+    height: 40px;
+}
 
 /* 
                     FOOTER
@@ -96,5 +114,9 @@ button{
 @media screen and (min-width: 1200px) {
     .my-aside{
         width: 140px;
+    }
+
+    .main-section{
+        width: calc(100% - 140px);
     }
 }
