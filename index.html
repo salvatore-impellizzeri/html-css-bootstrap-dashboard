@@ -28,13 +28,13 @@
                 
                 <div class="row flex-grow-1">
 
-                    <div class="col-2 col-lg-auto d-flex align-items-center">
+                    <div class="col-2 col-md-1 col-xl-auto d-flex align-items-center">
 
-                        <img src="img/mobile-logo.png" class="d-block d-lg-none mobile-logo" alt="boolean-logo">
-                        <img src="img/logo.svg" class="d-none d-lg-block desktop-logo" alt="">
+                        <img src="img/mobile-logo.png" class="d-block d-xl-none mobile-logo" alt="boolean-logo">
+                        <img src="img/logo.svg" class="d-none d-xl-block desktop-logo" alt="">
 
                     </div>
-                    <div class="col-9 col-lg-auto flex-grow-1 d-flex align-items-center">
+                    <div class="col-9 col-md-10 col-xl-auto flex-grow-1 d-flex align-items-center">
 
                         <form class="d-flex flex-grow-1 row no-wrap align-items-center" role="search">
 
@@ -49,13 +49,13 @@
                         </form>
 
                     </div>
-                    <div class="col-1 col-lg-auto  d-flex align-items-center justify-content-end">
+                    <div class="col-1 col-xl-auto d-flex align-items-center justify-content-end">
 
-                        <button class="border border-0 bg-white text-secondary-emphasis"><i class="fa-solid fa-list border-0"></i></button>
+                        <button class="border border-0 bg-white d-none d-xl-block"><i class="fa-solid fa-list border-0"></i></button>
 
-                        <button class="border border-0 bg-white"><i class="fa-solid fa-circle-question border-0"></i></button>
+                        <button class="border border-0 bg-white d-none d-xl-block"><i class="fa-solid fa-circle-question border-0"></i></button>
 
-                        <button class="border border-0 bg-white"><i class="fa-solid fa-ellipsis-vertical border-0"></i></button>
+                        <button class="border border-0 bg-white d-none d-xl-block"><i class="fa-solid fa-ellipsis-vertical border-0"></i></button>
 
                         <button class="border border-0 bg-white"><i class="bi bi-bell-fill fs-5 border-0"></i></button>
 
@@ -69,32 +69,41 @@
 
         <!-- MAIN -->
 
-        <main class="row">
+        <main>
 
             <!-- ASIDE -->
 
-            <div class="my-aside text-center col-2 col-xxl-1 pe-0 d-flex align-content-between flex-wrap">
+            <div class="my-aside text-center pe-0 d-flex align-content-between flex-wrap">
 
                 <div class="up-aside">
 
                     <div>
 
-                        <a href="#home">
-                            <i class="fa-solid fa-house text-light fs-5 mt-4 mb-3"></i>
+                        <a href="#home" class="link-underline link-underline-opacity-0 text-white fw-normal mt-4 mb-3 d-flex">
+
+                            <i class="fa-solid fa-house fs-5 mx-auto mx-xl-0  ms-xl-3"></i>
+                            <div class="d-none d-xl-block">Home</div>
+
                         </a>
 
                     </div>
                     <div>
 
-                        <a href="#stats">
-                            <i class="fa-solid fa-chart-simple text-light fs-5 mb-3"></i>
+                        <a href="#stats" class="link-underline link-underline-opacity-0 text-white fw-normal mb-3 d-flex">
+
+                            <i class="fa-solid fa-chart-simple mx-auto mx-xl-0  ms-xl-3 fs-5"></i>
+                            <div class="d-none d-xl-block">Stats</div>
+
                         </a>
 
                     </div>
                     <div>
 
-                        <a href="#signals">
-                            <i class="fa-solid fa-signal text-light fs-5 mb-3"></i>
+                        <a href="#signals" class="link-underline link-underline-opacity-0 text-white fw-normal mb-3 d-flex">
+
+                            <i class="fa-solid fa-signal mx-auto mx-xl-0 ms-xl-3 fs-5"></i>
+                            <div class="d-none d-xl-block">Signals</div>
+
                         </a>
 
                     </div>
@@ -104,9 +113,11 @@
 
                     <div>
 
-                        <a href="#" class="d-flex">
-                            <i class="fa-solid fa-gear text-light fs-5 mb-4"></i>
-                            <div>Admin</div>
+                        <a href="#" class="d-flex link-offset-2 link-underline link-underline-opacity-0 text-white fw-normal mb-4">
+
+                            <i class="fa-solid fa-gear mx-auto mx-xl-0  ms-xl-3 fs-5"></i>
+                            <div class="d-none d-xl-block">Admin</div>
+
                         </a>
 
                     </div>
@@ -117,7 +128,10 @@
 
             <!-- MAIN SECTION -->
 
-            <div class="col-10 col-xxl-11">
+            <!-- UPPER MAIN SACTION -->
+
+            <div>
+
 
 
             </div>

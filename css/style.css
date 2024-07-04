@@ -48,6 +48,7 @@ button{
 */
 
 .my-aside{
+    width: 70px;
     height: calc(100vh - 80px);
     position: fixed;
     background-color: var(--blue);
@@ -63,6 +64,20 @@ button{
     width: 100%;
 }
 
+.my-aside a{
+    width: 100%;
+}
+
+.my-aside a > i{
+    width: 40px;
+}
+
+/* 
+            MAIN SECTION
+*/
+
+
+
 /* 
                     FOOTER
 */
@@ -77,3 +92,9 @@ button{
 /* 
                     RESPONSIVE
 */
+
+@media screen and (min-width: 1200px) {
+    .my-aside{
+        width: 140px;
+    }
+}
