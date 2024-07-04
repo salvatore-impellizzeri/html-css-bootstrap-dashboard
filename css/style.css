@@ -1,12 +1,67 @@
 /* 
+                    COLORS
+*/
+:root{
+    --orange: #FF8F00;
+    --blue: #051E34;
+    --gray: #5B5858;
+}
+
+
+/* 
                     HEADER
 */
 
+.my-header-container{
+    height: 80px;
+}
+
+.mobile-logo{
+    height: 50px;
+}
+
+.desktop-logo{
+    height: 30px;
+}
+
+.bi-bell-fill{
+    color: var(--orange);
+}
+
+input[type=search]{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+button{
+    color: var(--gray);
+    width: 40px;
+}
 
 /* 
                     MAIN
 */
 
+
+/* 
+            ASIDE
+*/
+
+.my-aside{
+    height: calc(100vh - 80px);
+    position: fixed;
+    background-color: var(--blue);
+}
+
+.settings{
+    display: flex;
+    align-items: flex-end;
+}
+
+.up-aside,
+.down-aside{
+    width: 100%;
+}
 
 /* 
                     FOOTER

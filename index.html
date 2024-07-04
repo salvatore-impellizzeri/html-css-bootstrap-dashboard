@@ -24,17 +24,101 @@
 
          <header>
 
-            <div class="container">
+            <div class="container-fluid my-header-container d-flex align-items-center">
                 
+                <div class="row flex-grow-1">
+
+                    <div class="col-2 col-lg-auto d-flex align-items-center">
+
+                        <img src="img/mobile-logo.png" class="d-block d-lg-none mobile-logo" alt="boolean-logo">
+                        <img src="img/logo.svg" class="d-none d-lg-block desktop-logo" alt="">
+
+                    </div>
+                    <div class="col-9 col-lg-auto flex-grow-1 d-flex align-items-center">
+
+                        <form class="d-flex flex-grow-1 row no-wrap align-items-center" role="search">
+
+                            <div class="col-12 d-flex">
+
+                                <i class="bi p-2 bg-body-secondary bi-search border border-0 rounded-start fw-bold"></i>
+
+                                <input class="bg-body-secondary form-control me-2 border border-start-0 p-2 fw-semibold border-0 w-100 focus-ring border-opacity-0 shadow-none" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <div class="col-1 col-lg-auto  d-flex align-items-center justify-content-end">
+
+                        <button class="border border-0 bg-white text-secondary-emphasis"><i class="fa-solid fa-list border-0"></i></button>
+
+                        <button class="border border-0 bg-white"><i class="fa-solid fa-circle-question border-0"></i></button>
+
+                        <button class="border border-0 bg-white"><i class="fa-solid fa-ellipsis-vertical border-0"></i></button>
+
+                        <button class="border border-0 bg-white"><i class="bi bi-bell-fill fs-5 border-0"></i></button>
+
+                    </div>
+
+                </div>
+
             </div>
 
          </header>
 
         <!-- MAIN -->
 
-        <main>
+        <main class="row">
 
-            <div class="container">
+            <!-- ASIDE -->
+
+            <div class="my-aside text-center col-2 col-xxl-1 pe-0 d-flex align-content-between flex-wrap">
+
+                <div class="up-aside">
+
+                    <div>
+
+                        <a href="#home">
+                            <i class="fa-solid fa-house text-light fs-5 mt-4 mb-3"></i>
+                        </a>
+
+                    </div>
+                    <div>
+
+                        <a href="#stats">
+                            <i class="fa-solid fa-chart-simple text-light fs-5 mb-3"></i>
+                        </a>
+
+                    </div>
+                    <div>
+
+                        <a href="#signals">
+                            <i class="fa-solid fa-signal text-light fs-5 mb-3"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="down-aside">
+
+                    <div>
+
+                        <a href="#" class="d-flex">
+                            <i class="fa-solid fa-gear text-light fs-5 mb-4"></i>
+                            <div>Admin</div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MAIN SECTION -->
+
+            <div class="col-10 col-xxl-11">
+
 
             </div>
 
