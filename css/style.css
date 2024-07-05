@@ -12,6 +12,7 @@ body{
     --gray: #5B5858;
     --cyan: #1B72E8;
     --light-blue :#165BBA;
+    --bg-code: #F26551;
 }
 
 
@@ -119,15 +120,34 @@ main{
     background-color: var(--light-blue);
 }
 
-
-
-
 /* 
-                    FOOTER
+    LOWER SECTION
 */
 
+.card{
+    max-height: 500px;
+}
 
+.card table tr{
+    line-height: 22px;
+}
 
+.my-circle{
+    width: 30px;
+}
+
+.action{
+    width: 25px;
+}
+
+.state{
+    max-width: 50px;
+    font-size: 12px;
+}
+
+.card td{
+    
+}
 /* 
                     DEBUG
 */
