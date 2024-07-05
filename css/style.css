@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 /* 
                     COLORS
 */
@@ -51,6 +55,9 @@ button{
                     MAIN
 */
 
+main{
+    height: calc(100vh - 80px);
+}
 
 /* 
             ASIDE
@@ -58,8 +65,8 @@ button{
 
 .my-aside{
     position: fixed;
-    left: 0;
     top: 80px;
+    left: 0;
     width: 70px;
     height: calc(100vh - 80px);
     background-color: var(--blue);
@@ -88,14 +95,15 @@ button{
             MAIN SECTION
 */
 
-/* 
-    UPPER SECTION
-*/
-
 .main-section{
     width: calc(100% - 70px);
     float: right;
 }
+
+/* 
+    UPPER SECTION
+*/
+
 
 .my-upper-main{
     background-color: #1B72E8;
