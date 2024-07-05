@@ -1,17 +1,25 @@
 /* 
                     COLORS
 */
+
 :root{
     --orange: #FF8F00;
     --blue: #051E34;
     --gray: #5B5858;
     --cyan: #1B72E8;
+    --light-blue :#165BBA;
 }
 
 
 /* 
                     HEADER
 */
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
 
 .my-header-container{
     height: 80px;
@@ -49,9 +57,11 @@ button{
 */
 
 .my-aside{
+    position: fixed;
+    left: 0;
+    top: 80px;
     width: 70px;
     height: calc(100vh - 80px);
-    position: fixed;
     background-color: var(--blue);
     background-image: url(../img/sidebar-bg.png);
 }
@@ -96,6 +106,20 @@ button{
     height: 40px;
 }
 
+.desc{
+    background-color: var(--light-blue);
+}
+
+.plan{
+    min-width: 30px;
+}
+
+.boolean-plus{
+    width: 20px;
+
+}
+
+
 /* 
                     FOOTER
 */
@@ -114,6 +138,14 @@ button{
 @media screen and (min-width: 1200px) {
     .my-aside{
         width: 140px;
+    }
+
+    .main-section{
+        width: calc(100% - 140px);
+    }
+
+    .my-upper-main .w-100{
+        max-width: 50%;
     }
 
     .main-section{

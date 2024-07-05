@@ -24,7 +24,7 @@
 
          <header>
 
-            <div class="container-fluid my-header-container d-flex align-items-center">
+            <div class="container-fluid my-header-container d-flex align-items-center bg-white">
                 
                 <div class="row flex-grow-1">
 
@@ -73,73 +73,178 @@
 
             <!-- ASIDE -->
 
-            <div class="my-aside text-center pe-0 d-fixed align-content-between flex-wrap">
+            <aside>
 
-                <div class="up-aside">
+                <div class="my-aside text-center d-flex pe-0 align-content-between flex-wrap">
 
-                    <div>
+                    <div class="up-aside">
 
-                        <a href="#home" class="link-underline link-underline-opacity-0 text-white fw-normal mt-4 mb-3 d-flex">
+                        <div>
 
-                            <i class="fa-solid fa-house fs-5 mx-auto mx-xl-0  ms-xl-3"></i>
-                            <div class="d-none d-xl-block">Home</div>
+                            <a href="#home" class="link-underline link-underline-opacity-0 text-white fw-normal mt-4 mb-3 d-flex">
 
-                        </a>
+                                <i class="fa-solid fa-house fs-5 mx-auto mx-xl-0  ms-xl-3"></i>
+                                <div class="d-none d-xl-block">Home</div>
+
+                            </a>
+
+                        </div>
+                        <div>
+
+                            <a href="#stats" class="link-underline link-underline-opacity-0 text-white fw-normal mb-3 d-flex">
+
+                                <i class="fa-solid fa-chart-simple mx-auto mx-xl-0  ms-xl-3 fs-5"></i>
+                                <div class="d-none d-xl-block">Stats</div>
+
+                            </a>
+
+                        </div>
+                        <div>
+
+                            <a href="#signals" class="link-underline link-underline-opacity-0 text-white fw-normal mb-3 d-flex">
+
+                                <i class="fa-solid fa-signal mx-auto mx-xl-0 ms-xl-3 fs-5"></i>
+                                <div class="d-none d-xl-block">Signals</div>
+
+                            </a>
+
+                        </div>
 
                     </div>
-                    <div>
+                    <div class="down-aside">
 
-                        <a href="#stats" class="link-underline link-underline-opacity-0 text-white fw-normal mb-3 d-flex">
+                        <div>
 
-                            <i class="fa-solid fa-chart-simple mx-auto mx-xl-0  ms-xl-3 fs-5"></i>
-                            <div class="d-none d-xl-block">Stats</div>
+                            <a href="#" class="d-flex link-offset-2 link-underline link-underline-opacity-0 text-white fw-normal mb-4">
 
-                        </a>
+                                <i class="fa-solid fa-gear mx-auto mx-xl-0  ms-xl-3 fs-5"></i>
+                                <div class="d-none d-xl-block">Admin</div>
 
-                    </div>
-                    <div>
+                            </a>
 
-                        <a href="#signals" class="link-underline link-underline-opacity-0 text-white fw-normal mb-3 d-flex">
-
-                            <i class="fa-solid fa-signal mx-auto mx-xl-0 ms-xl-3 fs-5"></i>
-                            <div class="d-none d-xl-block">Signals</div>
-
-                        </a>
+                        </div>
 
                     </div>
 
                 </div>
-                <div class="down-aside">
-
-                    <div>
-
-                        <a href="#" class="d-flex link-offset-2 link-underline link-underline-opacity-0 text-white fw-normal mb-4">
-
-                            <i class="fa-solid fa-gear mx-auto mx-xl-0  ms-xl-3 fs-5"></i>
-                            <div class="d-none d-xl-block">Admin</div>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+                
+            </aside>
             <!-- MAIN SECTION -->
 
             <div class="main-section">
     
                 <!-- UPPER MAIN SACTION -->
 
-                <div class="my-upper-main text-white px-3 py-4">
+                <div class="my-upper-main text-white py-4">
 
-                    <div class="d-flex align-items-center">
+                    <div class="ms-0 row flex-wrap gap-4">
 
-                        <div class="fs-6 me-3">Nuovo Studente</div>
-                        <div class="p-2 border border-white rounded plus d-flex align-items-center justify-content-center">
+                        <div class="col-12 col-lg-4 d-flex align-items-center">
 
-                            <i class="bi bi-plus fs-3 text-center"></i>
+                            <div class="fs-6 me-3">
+
+                                Nuovo Studente
+                            
+                            </div>
+                            
+                            <button class="btn bg-transparent text-white plus desc border d-flex justify-content-center align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-plus fs-3 text-center"></i></button>
+
+                            <div class="offcanvas w-100 offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                </div>
+                                <form class="row px-3 g-3">
+                                    <div class="col-md-6">
+                                      <label for="inputNome" class="form-label">Nome</label>
+                                      <input type="email" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="input-text" class="form-label">Cognome</label>
+                                      <input type="text" class="form-control" id="inputSurname">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">@</span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">Stato</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Scegli...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">CAP</label>
+                                      <input type="number" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                      </div>
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Seleziona per proseguire
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="btn btn-primary" type="submit" value="Salva">
+                                        <input class="btn btn-warning" type="submit" value="Svuota">
+                                    </div>
+                                </form>
+                                
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-4 d-flex align-items-center">
+
+                            <div class="row row-gap-2 flex-wrap align-items-baseline">
+
+                                <div class="col-4 fs-2">
+
+                                    Boolean
+
+                                </div>
+                                <div class="col-4 rounded-pill desc text-center plan">
+
+                                    Piano blaze
+
+                                </div>
+                                <div class="col-4">
+
+
+
+                                </div>
+                                <div class="col-3 px-1 rounded-pill desc text-center">
+
+                                    3 app
+                                    
+                                </div>
+                                <i class="fa-solid fa-angles-right col-1"></i>
+                                <div class="col-3 rounded-circle desc fw-bold text-center boolean-plus ms-3 d-flex justify-content-center align-items-center">
+
+                                    +
+                                    
+                                </div>
+
+                            </div>
 
                         </div>
 
@@ -156,7 +261,7 @@
         <Footer>
 
             <div class="container"></div>
-
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </Footer>
 
         <!-- JS BOOTSTRAP -->
