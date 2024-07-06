@@ -101,6 +101,7 @@ aside{
 .main-section{
     width: calc(100% - 70px);
     overflow-y: auto;
+    overflow-x: hidden;
     height: calc(100vh - 80px);
 
 }
