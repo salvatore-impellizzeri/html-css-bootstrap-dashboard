@@ -1,7 +1,3 @@
-body{
-    overflow-x: hidden;
-}
-
 /* 
                     COLORS
 */
@@ -120,6 +116,16 @@ aside{
 .plus{
     width: 40px;
     height: 40px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.my-upper-main .plus:hover{
+    background-color: white;
+}
+
+.my-upper-main .plus:hover .bi-plus{
+    color: var(--cyan);
 }
 
 .desc{
@@ -129,10 +135,6 @@ aside{
 /* 
     LOWER SECTION
 */
-
-.upper-todo{
-    height: 100px;
-}
 
 /* 
     PROSSIME CLASSI
